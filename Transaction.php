@@ -15,7 +15,11 @@ class Transaction{
     private $_currency;
     private $_account_number;
     private $_signature;
-    
+    /*
+     * construct a Transaction
+     * All the variables match the names as used in kopokopo api documentation 
+     * (URL:https://app.kopokopo.com/push_api)
+     */ 
     public function __construct($service_name,$business_number,$transaction_reference,$internal_transaction_id,$transaction_timestamp, $transaction_type,
                                 $amount, $first_name,$middle_name,$last_name,$sender_phone,$currency,$account_number,$signature){
         $this -> _service_name = $service_name;
@@ -71,6 +75,9 @@ class Transaction{
     public function getSignature(){
         return $this -> _signature;
     }
+    /*
+     * method to push a transaction to the database
+     */
     public function push(){
       $connection = mysql_connect(Config::$SERVER,Config::$SERVER_PASSWORD);
       mysql_select_db(Config::$DATABASE_NAME,$connection);
