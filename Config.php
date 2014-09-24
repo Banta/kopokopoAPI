@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: WILLIAM
- * Date: 9/23/14
- * Time: 10:11 AM
- */
-
 namespace Base;
 
 
