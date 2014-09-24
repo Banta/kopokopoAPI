@@ -78,6 +78,6 @@ class Transaction{
       transaction_timestamp,amount,first_name,middle_name,last_name,currency,account_number,signature) VALUES(".
           '$this ->_service_name'.','.'$this->_business_number'.','.'$this -> _transaction_reference'.','.'$this -> _internal_transaction_id'.','.
          '$this -> _transaction_timestamp'.','.'$this-> _amount'.','.'$this -> _first_name'.','.'$this -> _middle_name'.','.'$this ->_last_name'.','.
-        '$this -> _currency'.','.'$this -> _account_number'.','.'$this -> _signature';
+        '$this -> _currency'.','.'$this -> _account_number'.','.'$this -> _signature'.")";
     }
 }
