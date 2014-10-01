@@ -77,7 +77,7 @@ $base_string = "service_name=".$service_name.
     "&first_name=".$first_name.
     "&last_name=".$last_name.
     "&middle_name".$middle_name.
-    "&sende_phone".$sender_phone.
+    "&sender_phone".$sender_phone.
     "&currency".$currency.
     "&account_number".$account_number;
 
