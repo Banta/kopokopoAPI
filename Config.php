@@ -1,7 +1,5 @@
 <?php
 namespace Base;
-
-
 class Config {
     public  static $SERVER = "";
     public  static $SERVER_PASSWORD ="";
@@ -18,3 +16,4 @@ class Config {
         return self::$DATABASE_NAME;
     }
 } 
+?>

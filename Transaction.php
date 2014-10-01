@@ -88,3 +88,4 @@ class Transaction{
         '$this -> _currency'.','.'$this -> _account_number'.','.'$this -> _signature'.")";
     }
 }
+?>
