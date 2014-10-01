@@ -75,10 +75,10 @@ $base_string = "service_name=".$service_name.
     "&amount=".$amount.
     "&first_name=".$first_name.
     "&last_name=".$last_name.
-    "&middle_name".$middle_name.
-    "&sender_phone".$sender_phone.
-    "&currency".$currency.
-    "&account_number".$account_number;
+    "&middle_name=".$middle_name.
+    "&sender_phone=".$sender_phone.
+    "&currency=".$currency.
+    "&account_number=".$account_number;
 
 $symmetric_key = \Base\Config::$API_KEY;
 $signature_created = base64_encode( hash_hmac("sha1",$base_string,$symmetric_key,true));
